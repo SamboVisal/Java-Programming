@@ -1,0 +1,28 @@
+package answermodel;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ReadFileSpecialChar {
+
+	public static void main(String[] args)throws IOException {
+		// TODO Auto-generated method stub
+		FileInputStream fis = new FileInputStream("D://stream//hello.txt");
+		byte b[] = new byte[100];
+		fis.read(b);
+		String name = new String(b);
+		char c[] = name.toCharArray();
+		int count=0;
+		int s;
+		
+		for(int i=0;i<name.length();i++) {
+			if(!(c[i]>='a'&&c[i]<='z' || c[i]>='A'&&c[i]<='Z')) {
+				System.out.println(c[i]);
+				count++;
+			}
+		}
+	
+
+	}
+
+}

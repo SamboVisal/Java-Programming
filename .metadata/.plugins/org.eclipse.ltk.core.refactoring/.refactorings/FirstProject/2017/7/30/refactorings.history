@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;presentation.Test6Byte.main().fis&apos; in &apos;presentation.Test6Byte.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;FirstProject&apos;&#x0D;&#x0A;- Original element: &apos;presentation.Test6Byte.main().fis&apos;&#x0D;&#x0A;- Field name: &apos;fis&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;fis&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;presentation{Test6Byte.java" name="fis" selection="263 50" stamp="1501161668314" static="true" version="1.0" visibility="2"/>
+</session>

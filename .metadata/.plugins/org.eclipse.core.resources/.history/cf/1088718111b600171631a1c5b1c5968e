@@ -1,0 +1,13 @@
+package answermodel;
+
+public class ReadSpecial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "!@pisal#";
+		char c[] =name.toCharArray();
+		System.out.println(c[0]);
+		
+	}
+
+}

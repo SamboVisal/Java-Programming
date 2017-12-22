@@ -1,0 +1,22 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class OutputStream {
+
+	private static Scanner input;
+
+	public static void main(String[] args)throws IOException {
+		// TODO Auto-generated method stub
+		FileOutputStream os = new FileOutputStream("D:\\stream\\hello.txt");
+		
+		//input = new Scanner(System.in);
+		int k = input.nextInt();
+		os.write(k);
+		os.flush();
+		os.close();
+		System.out.println("Am so done with you");
+	}
+
+}

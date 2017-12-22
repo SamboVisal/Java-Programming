@@ -1,0 +1,29 @@
+package serilizationexample;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Student implements Serializable{
+	String name;
+	int id;
+	public Student(String name, int id) {
+		this.id = id;
+		this.name = name;
+	}
+}
+
+public class SerilizationTest1 {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+		Student s1 = new Student("Pisa",123);
+		FileOutputStream fis = new FileOutputStream("D://stream//hello.txt");
+		ObjectOutputStream o = new ObjectOutputStream(fis);
+		o.writeObject(s1);
+		o.close();
+	}
+
+}

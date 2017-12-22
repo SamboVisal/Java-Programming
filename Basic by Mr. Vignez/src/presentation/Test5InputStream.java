@@ -1,0 +1,32 @@
+package presentation;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Test5InputStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try 
+		{
+			FileInputStream file = new FileInputStream("D:\\stream\\hello.txt");
+			try 
+			{	
+				int i;
+				while((i=file.read())!=-1) 
+				{
+					System.out.println((char)i+" : "+i);
+				}
+				System.out.println((char)i+" : "+i);
+			} catch (IOException e) {
+					e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
