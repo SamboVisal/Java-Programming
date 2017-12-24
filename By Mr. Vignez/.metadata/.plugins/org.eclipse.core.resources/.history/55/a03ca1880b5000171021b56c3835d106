@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Students {
+	
+	int roll;
+	static float mark[] = new float[3];
+	
+	int total;
+	static float avg;
+	static Scanner b;
+	public static void main(String[] args) 
+	{
+		int n,j;
+		float mark1[] = new float[3];
+		String name[] = new String[10];
+		Students stu = new Students();
+		int[] tot = new int[100];
+		b = new Scanner(System.in);
+		System.out.println("Welcome To School Management System");
+		System.out.print("Input Amount Of Students "); n = b.nextInt();
+		System.out.println("Please Input Students Name ");
+		for(int i=0; i<n; i++)
+		{
+			name[i] = b.next();	
+		}
+		
+		System.out.println("Input Marks for each students ");
+		for(int i = 0; i<mark.length; i++)
+		{
+			mark1[i] += b.nextFloat();
+		}
+		System.out.println("All Students marks ");
+		for(int i=0; i<n; i++){
+			System.out.println("Name Of Student is " +name[i] + " Marks: " + mark1[i]);
+		}
+	}
+
+}
